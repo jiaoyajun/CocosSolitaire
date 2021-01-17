@@ -19,6 +19,7 @@ export class EntryPoint extends Component {
 
     start () {
         // Your initialization goes here.
+        ll.MyTest.Log();
     }
 
     // update (deltaTime: number) {

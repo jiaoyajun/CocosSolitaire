@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "module": "amd",
+      "lib": [ "dom", "es6", "ES2015.Collection"],
+      "target": "es6",
+      "skipLibCheck": true,
+      "outFile": "./ll.js",
+      "declaration": true,
+      "sourceMap": false,
+      "removeComments": true
+    },
+    "include": [
+      "src",
+      "lib"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }

@@ -22,3 +22,9 @@ node_modules/
 # WebStorm
 #//////////////////////////
 .idea/
+
+#//////////////////////////
+# LLFramework
+#//////////////////////////
+LLFramework/dist/ll.d.ts
+LLFramework/dist/ll.js
