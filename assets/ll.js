@@ -6,6 +6,9 @@ window.ll = window.__my__;
         static Log() {
             console.debug("Hello LLFramework!");
         }
+        static Log2() {
+            console.debug("Hello LLFramework! 2");
+        }
     }
     __my__.MyTest = MyTest;
 })(__my__ || (__my__ = {}));

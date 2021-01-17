@@ -3,5 +3,9 @@ namespace __my__ {
         static Log(): void {
             console.debug("Hello LLFramework!")
         }
+
+        static Log2(): void {
+            console.debug("Hello LLFramework! 2")
+        }
     }
 }
