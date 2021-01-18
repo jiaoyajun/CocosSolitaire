@@ -20,6 +20,7 @@ export class EntryPoint extends Component {
     start () {
         // Your initialization goes here.
         ll.MyTest.Log();
+        ll.MyTest.Log2();
     }
 
     // update (deltaTime: number) {

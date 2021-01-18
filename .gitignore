@@ -1,3 +1,7 @@
+#//////////////////////////
+# OS X
+#//////////////////////////
+.DS_Store
 
 #///////////////////////////
 # Cocos Creator 3D Project
@@ -23,3 +27,5 @@ node_modules/
 #//////////////////////////
 LLFramework/dist/ll.d.ts
 LLFramework/dist/ll.js
+
+
