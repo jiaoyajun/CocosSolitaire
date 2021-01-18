@@ -368,9 +368,6 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "p_LogoPrefab": {
-      "__uuid__": "f4b2e702-2c29-4893-ab3a-99e68ed7a4a1"
-    },
     "n_Canvas": {
       "__id__": 9
     },

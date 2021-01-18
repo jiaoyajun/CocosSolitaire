@@ -5,7 +5,7 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
-import { _decorator, Component, Node, Prefab, Canvas, instantiate } from 'cc';
+import { _decorator, Component, Node, Prefab, Canvas, instantiate, resources } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('EntryPoint')
@@ -17,7 +17,6 @@ export class EntryPoint extends Component {
     // @property
     // serializableDummy = 0;
 
-    @property({ type: Prefab }) p_LogoPrefab: Prefab = null!;
     @property({ type: Canvas }) n_Canvas: Canvas = null!;
 
     start () {
@@ -25,8 +24,10 @@ export class EntryPoint extends Component {
         ll.MyTest.Log();
         ll.MyTest.Log2();
 
-        let _logo: Node = instantiate(this.p_LogoPrefab);
-        this.n_Canvas.node.addChild(_logo);
+        resources.load("Prefab/UIPanelLogo", Prefab, (err, prefab) => {
+            let _logo: Node = instantiate(prefab!);
+            this.n_Canvas.node.addChild(_logo);
+        });
     }
 
     // update (deltaTime: number) {
